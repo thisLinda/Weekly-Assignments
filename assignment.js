@@ -1,16 +1,15 @@
 // Question 1
 //Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 
-// let ages = [3, 9, 23, 64, 2, 8, 28, 93, 16];
-
 // Programmatically subtract the value of the first element in the array from the value in the last element of the array (do not use numbers to reference the last element, find it programmatically, ages[7] – ages[0] is not allowed). Print the result to the console.
 // Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
 
+// Use a loop to iterate through the array and calculate the average age. Print the result to the console.
+
+// let ages = [3, 9, 23, 64, 2, 8, 28, 93, 16];
 // let sum = 0;
 
 // console.log(ages[ages.length -1] - ages[0]);
-
-// Use a loop to iterate through the array and calculate the average age. Print the result to the console.
 
 // for (let i = 0; i < ages.length; i++) {
 //   sum += ages[i];
@@ -20,11 +19,10 @@
 
 // Question 2
 // Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
-
-//let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
-
 // Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
+// Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
 
+// let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
 // let sum = 0;
 // let concatNames = '';
 
@@ -32,8 +30,6 @@
 //   sum += names[i].length;
 // }
 // console.log('Average number of letters per name is: ' + sum / names.length);
-
-// Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
 
 // for (let i = 0; i < names.length; i++) {
 //   const name = names[i];
@@ -48,24 +44,24 @@
 // without loop
 //console.log(names.join(' '));
 
-//Question 3
-//The last element of an array is accessed `<array-name>.length - 1`
+// Question 3
+// The last element of an array is accessed `<array-name>.length - 1`
 
-//Question 4
-//The first element of an array is accessed `<array-name>[0]`
+// Question 4
+// The first element of an array is accessed `<array-name>[0]`
 
 //Question 5
 // Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
 
-//let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
-// solution using map method
+// let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
+// //solution using map method
 // let lengths = names.map(name => {
 //   return name.length
 // })
 // console.log(lengths);
 
-//let nameLengths = [];
-// solutions using loop (per requirement)
+// let nameLengths = [];
+// //solutions using loop (per requirement)
 // for (let i = 0; i < names.length; i++) {
 //     nameLengths.push(names[i].length);
 // }
@@ -73,6 +69,13 @@
 
 // Question 6
 // Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
+
+// let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
+// let nameLengths = [];
+// for (let i = 0; i < names.length; i++) {
+//     nameLengths.push(names[i].length);
+// }
+
 // let sum = 0;
 // for (let i = 0; i < nameLengths.length; i++) {
 //   sum = nameLengths[i] + sum;
@@ -115,7 +118,7 @@
 // Question 10
 // Write a function that takes an array of numbers and returns the average of all the elements in the array.
 
-// sum = 0;
+// let sum = 0;
 // let numArray = [2, 4, 6, 8, 10];
 
 // function averageArray(array) {
@@ -126,3 +129,49 @@
 //   return mean;
 // }
 // console.log(averageArray(numArray));
+
+// Question 11
+// Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+
+
+// let array1 = [1, 2, 3, 4, 5];
+// let array2 = [100, 200, 300];
+
+// function compareArrays(arrayOne, arrayTwo) {
+//   let sum = 0;
+//   for (let i = 0; i < arrayOne.length; i++) {
+//     sum1 = arrayOne[i] + sum;
+//   }
+//   let mean1 = sum1 / arrayOne.length;
+
+//   let sum2 = 0;
+//   for (let i = 0; i < arrayTwo.length; i++) {
+//     sum2 = arrayTwo[i] + sum2;
+//   }
+//   let mean2 = sum2 / arrayTwo.length;
+
+//   if (mean1 > mean2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(compareArrays(array1, array2));
+
+// Question 12
+// Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+
+// let isHotOutside = true;
+// let moneyInPocket = 6;
+
+// function willBuyDrink(bool, num) {
+//   if (isHotOutside == true && moneyInPocket > 10.5) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(willBuyDrink());
+
+// Question 13
+// Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
