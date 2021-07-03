@@ -175,3 +175,27 @@
 
 // Question 13
 // Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+
+let times = [15, 20, 30, 60];
+let weekend = true;
+let parade = true;
+let Manchester = true;
+let greenLights = true;
+
+function workCommuteTime(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (parade == true || Manchester == false) {
+      return 60;
+      }
+    if (weekend == true && Manchester == true) {
+      if (greenLights == true) {
+        return 15;
+      } else {
+        return 20;
+      }
+    } else {
+        return 'Are you even going to work?!';
+    }
+  }
+}
+console.log(workCommuteTime(times));
