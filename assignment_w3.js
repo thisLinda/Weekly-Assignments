@@ -177,26 +177,26 @@
 // Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
 // Function workCommuteTime captures my mental process for planning drive time each work day and puts it into code, the parade part is rarely an issue :)
 
-// let times = [15, 20, 30, 60];
-// let weekend = true;
-// let parade = true;
-// let Manchester = true;
-// let greenLights = true;
+let times = [15, 20, 30, 60];
+let weekend = true;
+let parade = true;
+let Manchester = true;
+let greenLights = true;
 
-// function workCommuteTime(array) {
-//   for (let i = 0; i < array.length; i++) {
-//     if (parade || Manchester == false) {
-//       return 60;
-//       }
-//     if (weekend && Manchester) {
-//       if (greenLights) {
-//         return 15;
-//       } else {
-//         return 20;
-//       }
-//     } else {
-//         return 'Are you even going to work?!';
-//     }
-//   }
-// }
-// console.log(workCommuteTime(times));
+function workCommuteTime(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (parade || Manchester == false) {
+      return 60;
+      }
+    if (weekend && Manchester) {
+      if (greenLights) {
+        return 15;
+      } else {
+        return 20;
+      }
+    } else {
+        return 'Are you even going to work?!';
+    }
+  }
+}
+console.log(workCommuteTime(times));
