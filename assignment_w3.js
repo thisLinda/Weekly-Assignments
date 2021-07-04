@@ -182,6 +182,7 @@
 // let Manchester = true;
 // let greenLights = true;
 
+// Function workCommuteTime captures my mental process for planning drive time each work day and puts it into code, the parade part is rarely an issue :)
 // function workCommuteTime(array) {
 //   for (let i = 0; i < array.length; i++) {
 //     if (parade || Manchester == false) {
