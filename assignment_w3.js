@@ -175,6 +175,7 @@
 
 // Question 13
 // Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+// Function workCommuteTime captures my mental process for planning drive time each work day and puts it into code, the parade part is rarely an issue :)
 
 // let times = [15, 20, 30, 60];
 // let weekend = true;
@@ -182,7 +183,6 @@
 // let Manchester = true;
 // let greenLights = true;
 
-// Function workCommuteTime captures my mental process for planning drive time each work day and puts it into code, the parade part is rarely an issue :)
 // function workCommuteTime(array) {
 //   for (let i = 0; i < array.length; i++) {
 //     if (parade || Manchester == false) {
